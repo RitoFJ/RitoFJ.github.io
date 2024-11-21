@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /*display: flex;
+    justify-content: flex;
+    align-items: flex; */
+    min-height: 100vh;
+    background: linear-gradient(90deg, #e2e2e2, #c9d6ff);
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #004F73;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.top-bar img {
+    max-width: 150px; /* Ajusta o tamanho da imagem */
+    height: auto;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+.navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+}
+
+
+.painel_1{
+    font-size: 10px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 22%;
+    left: 2%;
+    padding: 30px;
+    height: 150px;
+    width: 300px;
+    border-top: yellow;
+    border-left: yellow;
+    border-right: blue;
+    border-bottom: blue;
+    border-style: solid;
+    border-radius: 10px;
+    color: black;
+}
+
+.painel_2{
+    font-size: 10px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 22%;
+    left: 25%;
+    padding: 30px;
+    height: 150px;
+    width: 300px;
+    border-top: yellow;
+    border-left: yellow;
+    border-right: blue;
+    border-bottom: blue;
+    border-style: solid;
+    border-radius: 10px;
+    color: black;
+}
+
+.painel_3{
+    font-size: 10px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 22%;
+    left: 54%;
+    padding: 30px;
+    height: 150px;
+    width: 300px;
+    border-top: yellow;
+    border-left: yellow;
+    border-right: blue;
+    border-bottom: blue;
+    border-style: solid;
+    border-radius: 10px;
+    color: black;
+}
+
+.painel_4{
+    font-size: 10px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 22%;
+    left: 77%;
+    padding: 30px;
+    height: 150px;
+    width: 300px;
+    border-top: yellow;
+    border-left: yellow;
+    border-right: blue;
+    border-bottom: blue;
+    border-style: solid;
+    border-radius: 10px;
+    color: black;
+}
+
+
+.painel_5{
+    font-size: 10px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    padding: 30px;
+    height: 150px;
+    width: 300px;
+    border-top: yellow;
+    border-left: yellow;
+    border-right: blue;
+    border-bottom: blue;
+    border-style: solid;
+    border-radius: 10px;
+    color: black;
+}
+
+
+.painel_6{
+    font-size: 10px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    padding: 30px;
+    height: 150px;
+    width: 300px;
+    border-top: yellow;
+    border-left: yellow;
+    border-right: blue;
+    border-bottom: blue;
+    border-style: solid;
+    border-radius: 10px;
+    color: black;
+}
+
+
+.painel_7{
+    font-size: 10px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    padding: 30px;
+    height: 150px;
+    width: 300px;
+    border-top: yellow;
+    border-left: yellow;
+    border-right: blue;
+    border-bottom: blue;
+    border-style: solid;
+    border-radius: 10px;
+    color: black;
+}
+
+
+.painel_8{
+    font-size: 10px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 77%;
+    padding: 30px;
+    height: 150px;
+    width: 300px;
+    border-top: yellow;
+    border-left: yellow;
+    border-right: blue;
+    border-bottom: blue;
+    border-style: solid;
+    border-radius: 10px;
+    color: black;
+}
+
+
+.painel_9{
+    font-size: 10px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 80%;
+    left: 2%;
+    padding: 30px;
+    height: 150px;
+    width: 300px;
+    border-top: yellow;
+    border-left: yellow;
+    border-right: blue;
+    border-bottom: blue;
+    border-style: solid;
+    border-radius: 10px;
+    color: black;
+}
+
+.painel_10{
+    font-size: 10px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    padding: 30px;
+    height: 150px;
+    width: 300px;
+    border-top: yellow;
+    border-left: yellow;
+    border-right: blue;
+    border-bottom: blue;
+    border-style: solid;
+    border-radius: 10px;
+    color: black;
+}
+
+.painel_11{
+    font-size: 10px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 80%;
+    left: 54%;
+    padding: 30px;
+    height: 150px;
+    width: 300px;
+    border-top: yellow;
+    border-left: yellow;
+    border-right: blue;
+    border-bottom: blue;
+    border-style: solid;
+    border-radius: 10px;
+    color: black;
+}
+
+.painel_12{
+    font-size: 10px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 80%;
+    left: 77%;
+    padding: 30px;
+    height: 150px;
+    width: 300px;
+    border-top: yellow;
+    border-left: yellow;
+    border-right: blue;
+    border-bottom: blue;
+    border-style: solid;
+    border-radius: 10px;
+    color: black;
+}
+
+.andares{
+    font-size: 20px;
+    align-items: center;
+}
+.andares h1{
+    text-align: start;
+    font-size: 40px;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+}
+.andares h2 {
+    text-align: start;
+    font-size: 40px;
+    position: absolute;
+    top: 42%;
+    left: 2%;
+}
+.andares h3 {
+    text-align: start;
+    font-size: 40px;
+    position: absolute;
+    top: 72%;
+    left: 2%;
+}
+

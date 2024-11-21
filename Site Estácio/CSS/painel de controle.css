@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #e2e2e2, #c9d6ff);
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #004F73;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.top-bar img {
+    max-width: 150px; /* Ajusta o tamanho da imagem */
+    height: auto;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+.navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+}
+
+.container {
+    position: fixed;
+    width: 1200px;
+    height: 700px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    overflow: hidden;
+    align-self: flex;
+    top: 15%;
+}
+
+.form-box {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: #fff; 
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+    z-index: 1;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+}
+
+.container h1 {
+    font-size: 36px;
+    margin: -10px 0;
+}
+
+.input-box {
+    position: relative;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 13px 50px 14px 20px ;
+    background: #eee;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+.input-box input::placeholder {
+    color: #888;
+    font-weight: 400;
+}
+
+.input-box i {
+    position: flex;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #888;
+}
+
+.btn-curso {
+    width: 100%;
+    height: 48px;
+    background: #7494ec;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600; 
+}
+.btn-curso a {
+    color: white;
+    text-decoration: none;
+}
+.btn-sala {
+    width: 100%;
+    height: 48px;
+    background: #7494ec;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600; 
+}
+.btn-sala a {
+    color: white;
+    text-decoration: none;
+}
+.btn-horario {
+    width: 100%;
+    height: 48px;
+    background: #7494ec;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600; 
+}
+.btn-horario a {
+    color: white;
+    text-decoration: none;
+}
+.btn-confirmar {
+    position: absolute;
+    width: 88%;
+    height: 48px;
+    background: #7494ec;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    top: 80%;
+    left: 6%;
+}
+.btn-confirmar a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.container p {
+    font-size: 14.5px;
+    margin: 15px 0;
+}
+
+.toggle-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.toggle-box::before {
+    content: '';
+    position: absolute;
+    left: -250%;
+    width: 300%;
+    height: 100%;
+    background: #7494ec;
+    border-radius: 150px;
+    z-index: 2;
+}
+
+.toggle-panel {
+    position: absolute;
+    top: 5%;
+    width: 50%;
+    height: 100%;
+   /* background: seagreen; */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 2;
+}
+
+.painel_1{
+    font-size: 20px;
+    text-align: justify;
+    background-color: white;
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    align-content: flex-start;
+    padding: 30px;
+    height: 150px;
+    width: 300px;
+    border-top: yellow;
+    border-left: yellow;
+    border-right: blue;
+    border-bottom: blue;
+    border-style: solid;
+    border-radius: 10px;
+    color: black;
+}
+
+.painel_2{
+    font-size: 20px;
+    text-align: justify;
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    align-content: flex-start;
+    padding: 30px;
+    height: 150px;
+    width: 300px;
+    border-top: yellow;
+    border-left: yellow;
+    border-right: blue;
+    border-bottom: blue;
+    border-style: solid;
+    border-radius: 10px;
+    color: black;
+}
+
+.painel_3{
+    font-size: 20px;
+    text-align: justify;
+    background-color: white;
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    align-content: flex-start;
+    padding: 30px;
+    height: 150px;
+    width: 300px;
+    border-top: yellow;
+    border-left: yellow;
+    border-right: blue;
+    border-bottom: blue;
+    border-style: solid;
+    border-radius: 10px;
+    color: black;
+}
+
+
+.toggle-panel p {
+    margin-bottom: 20px;
+}
+
+.toggle-panel .btn {
+    width: 160px;
+    height: 46px;
+    background: transparent;
+    border: 2px solid #fff;
+    box-shadow: none;
+}
